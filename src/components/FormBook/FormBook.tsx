@@ -2,7 +2,12 @@ import { useState } from 'react';
 import styles from './FormBook.module.css';
 import useCreateBook from '../../hooks/useCreateBook';
 
-export default function FormBook() {
+interface FormBookProps {
+    onBookCreated?: () => void; 
+
+}
+
+export default function FormBook(props: FormBookProps) {
     const [titulo, setTitulo] = useState('');
     const [autor, setAutor] = useState('');
     const [dataPublicacao, setDataPublicacao] = useState('');
@@ -31,6 +36,8 @@ export default function FormBook() {
         setDataPublicacao('');
         setDisponivel(true);
         setHoraCadastro(new Date().toISOString());
+
+        props.onBookCreated?.();
     };
 
     return (

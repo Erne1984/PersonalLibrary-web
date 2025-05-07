@@ -17,7 +17,7 @@ export const createBook = async ( data: BookFormData ) => {
     return response.data;
 }
 
-export const getBooks = async () => {
+export const getAllBooks = async () => {
     const response = await api.get('/books');
 
     return response.data;

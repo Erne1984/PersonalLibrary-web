@@ -1,0 +1,37 @@
+.bookCard {
+    width: 100%;
+    max-width: 600px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 16px;
+    margin: 12px 0;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+    cursor: pointer;
+}
+
+.bookCard:hover {
+    transform: scale(1.01);
+}
+
+.title {
+    margin: 0 0 8px;
+    font-size: 1.4rem;
+    color: #333;
+}
+
+.info {
+    margin: 4px 0;
+    color: #555;
+}
+
+.available {
+    color: green;
+    font-weight: bold;
+}
+
+.unavailable {
+    color: red;
+    font-weight: bold;
+}
