@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import styles from './BookCard.module.css';
-import ModalDeleteCard from '../ModalDelete/ModalDeleteCard';
+import ModalDeleteCard from '../ModalDeleteCard/ModalDeleteCard';
 
 interface BookCardProps {
     id: number;
@@ -28,6 +28,7 @@ export default function BookCard(props: BookCardProps) {
                 <h2 className={styles.title}>{title}</h2>
                 <p className={styles.info}>Autor: {author}</p>
                 <p className={styles.info}>Data de Publicação: {publicationDate}</p>
+                <p className={styles.info}> BookId: {id} </p>
                 <p className={styles.info}>
                     Status: <span className={status ? styles.available : styles.unavailable}>
                         {status ? 'Disponível' : 'Indisponível'}

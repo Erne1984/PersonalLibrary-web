@@ -14,7 +14,7 @@ export default function FormBookPage() {
     return (
         <div className={styles["form-book-page-container"]}>
 
-            <FormBook onBookCreated={handleBooksFetched}></FormBook>
+            <FormBook bookChanged={handleBooksFetched} onBookCreated={handleBooksFetched}></FormBook>
 
             <div className={styles["form-book-page-list"]}>
 
