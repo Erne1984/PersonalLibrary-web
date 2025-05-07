@@ -1,0 +1,53 @@
+.modal-delete-card-container {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 5px;
+    padding: 1.2rem;
+    width: 480px;
+    margin: 0;
+}
+
+.modal-delete-card-container::backdrop {
+    background-color: rgba(18, 18, 18, 0.8);
+}
+
+.modal-delete-card-actions {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.modal-delete-card-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out, transform 0.1s ease-in-out;
+}
+
+.modal-delete-card-button:first-child {
+    background-color: #e0e0e0;
+    color: #333;
+}
+
+.modal-delete-card-button:first-child:hover {
+    background-color: #d6d6d6;
+    transform: scale(1.03);
+}
+
+.modal-delete-card-button:last-child {
+    background-color: #e53935;
+    color: white;
+}
+
+.modal-delete-card-button:last-child:hover {
+    background-color: #d32f2f;
+    transform: scale(1.03);
+}

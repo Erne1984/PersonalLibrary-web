@@ -28,6 +28,7 @@ export default function FormBookPage() {
                         author={book.autor}
                         publicationDate={book.dataPublicacao}
                         status={book.disponivel}
+                        bookChanged={handleBooksFetched}
                     />
                 ))}
 
